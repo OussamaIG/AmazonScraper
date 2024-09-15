@@ -16,7 +16,7 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 
 DOWNLOAD_DELAY = 3  # Delay in seconds
 
-RETRY_TIMES = 5
+RETRY_TIMES = 10
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

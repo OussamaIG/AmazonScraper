@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Scraper</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #e9ecef; /* Light background for the whole page */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff; /* White background for the container */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px; /* Increased padding */
+            max-width: 800px; /* Increased max width for larger screens */
+            width: 100%; /* Responsive width */
+        }
+        .text-primary-custom {
+            color: #007bff; /* Blue color for the title */
+        }
+        .btn-custom {
+            background-color: #007bff; /* Blue button */
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .form-control-custom {
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4 text-center text-primary-custom">Amazon Scraper</h1>
+        <form method="POST">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control form-control-custom" placeholder="Enter search term" name="search_term" aria-label="Search term" aria-describedby="button-addon2" required>
+                <div class="input-group-append">
+                    <button class="btn btn-custom" type="submit" id="button-addon2">Scrape</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (optional for additional interactivity) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
